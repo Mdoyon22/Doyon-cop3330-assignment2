@@ -9,11 +9,13 @@ import org.junit.jupiter.api.Test;
 
 class AppTest
 {
-    static App ex27 = new App();
+
 
     @Test
-    public void test_validateEmployeeID() throws Exception
+    void test_validateEmployeeID() throws Exception
     {
+        App ex27 = new App();
+
         //True
         assertTrue(ex27.validateEmployeeID("AA-1234"));
 
@@ -22,8 +24,10 @@ class AppTest
     }
 
     @Test
-    public void test_validateName()
+    void test_validateName()
     {
+        App ex27 = new App();
+
         //True
         assertTrue(ex27.validateNameExists("John"));
 
@@ -32,8 +36,10 @@ class AppTest
     }
 
     @Test
-    public void test_ValidateNameLength()
+    void test_ValidateNameLength()
     {
+        App ex27 = new App();
+
         //True
         assertTrue(ex27.validateNameLength("James"));
 
@@ -42,8 +48,10 @@ class AppTest
     }
 
     @Test
-    public void test_ValidateZipCode()
+    void test_ValidateZipCode()
     {
+        App ex27 = new App();
+
         //True
         assertTrue(ex27.validateZipCode("33115"));
 
@@ -55,8 +63,10 @@ class AppTest
     }
 
     @Test
-    public void test_ValidateInp()
+    void test_ValidateInp()
     {
+        App ex27 = new App();
+
         assertEquals("There were no errors found.", ex27.validateInput("john", "johnson", "33333", "AA-1234"));
 
         assertNotEquals("There were no errors found.", ex27.validateInput("", "j", "334ghfjn1", "AA-3215"));

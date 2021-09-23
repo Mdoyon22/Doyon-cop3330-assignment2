@@ -16,16 +16,23 @@ public class AppTest {
     public void test_passwordValidator() {
 
 
-        String[] samplePasswords = {"12345", "hey", "heythere665", "hello12345%?%!"};
+        String[] samplePasswords = {"12345", "hey", "heythere675", "hello232345%!"};
 
         assertEquals(ex25.passwordValidator(samplePasswords[0]), 0);
+
         assertEquals(ex25.passwordValidator(samplePasswords[1]), 1);
+
         assertEquals(ex25.passwordValidator(samplePasswords[2]), 2);
+
         assertEquals(ex25.passwordValidator(samplePasswords[3]), 3);
 
+
         assertNotEquals(ex25.passwordValidator(samplePasswords[0]), 1);
+
         assertNotEquals(ex25.passwordValidator(samplePasswords[1]), 3);
+
         assertNotEquals(ex25.passwordValidator(samplePasswords[2]), 1);
+
         assertNotEquals(ex25.passwordValidator(samplePasswords[3]), 2);
 
     }

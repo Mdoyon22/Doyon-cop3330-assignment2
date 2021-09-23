@@ -10,11 +10,13 @@ import org.junit.jupiter.api.Test;
 
 class AppTest
 {
-    static PaymentCalculator calculator = new PaymentCalculator();
+
 
     @Test
-    public void test_calcMonthsUntilPaidOff()
+    void test_calcMonthsUntilPaidOff()
     {
+        PaymentCalculator calculator = new PaymentCalculator();
+
         Assertions.assertEquals(calculator.calculateMonthsUntilPaidOff(12.0/100/365, 5000, 100), 70);
 
         Assertions.assertNotEquals(calculator.calculateMonthsUntilPaidOff(12.0/100/365, 5000, 100), 55);

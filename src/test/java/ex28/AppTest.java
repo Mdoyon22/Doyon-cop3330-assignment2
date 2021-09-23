@@ -10,11 +10,13 @@ import org.junit.jupiter.api.Test;
 
 class AppTest
 {
-    static App ex28 = new App();
+
 
     @Test
-    public void test_calcSum()
+    void test_calcSum()
     {
+        App ex28 = new App();
+
         int[] testArr = {1,2,3,4,5};
 
         //True

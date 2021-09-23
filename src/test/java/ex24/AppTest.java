@@ -5,7 +5,6 @@
 
 
 package ex24;
-import ex24.AnagramChecker;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;

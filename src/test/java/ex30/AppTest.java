@@ -10,11 +10,13 @@ import org.junit.jupiter.api.Test;
 
 class AppTest
 {
-    static App ex30 = new App();
+
 
     @Test
     public void test_CalcSum()
     {
+        App ex30 = new App();
+
         //True
         assertEquals(250, ex30.calcProd(50, 5));
 
